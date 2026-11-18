@@ -39,7 +39,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            <span class="uppercase tracking-widest text-[10px] font-bold">Home</span>
+            <span class="uppercase tracking-widest text-[10px] font-bold flex items-center gap-2">
+                Home <span class="text-zinc-500 font-normal lowercase">|</span> Action Contractors, LLC
+            </span>
         </a>
         <a href="/contact.vcf" 
            class="text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all duration-300">
@@ -54,20 +56,22 @@
             <div class="absolute bottom-[-5%] right-[-5%] w-[60%] h-[60%] rounded-full bg-zinc-800 blur-[100px]"></div>
         </div>
 
-        <div class="relative z-10 max-w-4xl w-full text-center space-y-12">
+        <div class="relative z-10 max-w-4xl w-full text-center space-y-6">
             
             <!-- Header -->
             <header class="space-y-3 pt-10">
                 <h2 class="text-zinc-500 uppercase tracking-[0.3em] text-[10px] md:text-xs font-semibold">Infrastructure Specialists</h2>
-                <div class="text-3xl md:text-6xl font-bold tracking-tight leading-tight flex items-center justify-center flex-wrap gap-x-4">
+                <div class="text-3xl md:text-6xl font-bold tracking-tight leading-tight flex items-center justify-center flex-wrap gap-x-2">
                     <!-- Rotating Section -->
                     <div class="relative inline-block h-[1.2em] overflow-hidden text-right min-w-[140px] md:min-w-[280px]">
                         <span class="word-slide delay-1">Built for</span>
                         <span class="word-slide delay-2">Ideas into</span>
                         <span class="word-slide delay-3">Ready for</span>
                     </div>
-                    <!-- Anchor -->
-                    <span class="text-yellow-500 relative z-10" style="padding-bottom: 12px;">Action.</span>
+                    <!-- Anchor - The "Invisible Y" trick -->
+                    <span class="text-yellow-500 relative z-10">
+                        Action.<span class="opacity-0 text-transparent absolute left-0 bottom-0">y</span>
+                    </span>
                 </div>
             </header>
 
