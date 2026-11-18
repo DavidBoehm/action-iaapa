@@ -1,0 +1,40 @@
+<svg id="vectorLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" class="w-full h-auto max-w-[850px] transition-transform select-none drop-shadow-sm" width="1000" height="340"><style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;display=swap');
+        .logo-wordmark {
+          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          font-weight: 800;
+        }
+      </style>
+          <defs>
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;display=swap');
+              .logo-wordmark {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+              }
+            </style>
+          </defs>
+
+          <!-- Top Outer Wing & Cap (Shiftable dynamically) -->
+          <g id="topGeometryGroup" transform="translate(0, 12)">
+            <!-- Top Wing Blade -->
+            <polygon id="topWing" fill="#13264D" points="50,118 395,20 605,20 950,118 760,118 500,42 240,118"/>
+            
+            <!-- Top Inner Diamond Accent (Upper triangle flange with clearance) -->
+            <polygon id="topDiamondAccent" fill="#13264D" points="500,50 690,118 642,118 500,68 358,118 310,118"/>
+          </g>
+
+          <!-- Central Text Channel (Generous vertical clearance, no overlapping triangles) -->
+          <g id="textGroup">
+            <text id="logoText" x="500" y="191.45" text-anchor="middle" class="logo-wordmark" font-size="65" font-weight="800" letter-spacing="5" fill="#13264D">ACTION CONTRACTORS</text>
+          </g>
+
+          <!-- Bottom Outer Wing & Cap (Shiftable dynamically) -->
+          <g id="bottomGeometryGroup" transform="translate(0, -12)">
+            <!-- Bottom Inner Diamond Accent (Lower triangle flange with clearance) -->
+            <polygon id="bottomDiamondAccent" fill="#13264D" points="500,290 690,222 642,222 500,272 358,222 310,222"/>
+
+            <!-- Bottom Wing Blade -->
+            <polygon id="bottomWing" fill="#13264D" points="50,222 395,320 605,320 950,222 760,222 500,298 240,222"/>
+          </g>
+        </svg>

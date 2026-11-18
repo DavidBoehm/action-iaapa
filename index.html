@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Contractors | Infrastructure Specialists</title>
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(24, 24, 27, 0.6); backdrop-filter: blur(12px); }
+
+        @keyframes cycleText {
+            0% { opacity: 0; transform: translateY(15px); }
+            5% { opacity: 1; transform: translateY(0); }
+            30% { opacity: 1; transform: translateY(0); }
+            35% { opacity: 0; transform: translateY(-15px); }
+            100% { opacity: 0; transform: translateY(-15px); }
+        }
+        .word-slide {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            text-align: right;
+            opacity: 0;
+            animation: cycleText 9s infinite;
+            white-space: nowrap;
+        }
+        .delay-1 { animation-delay: 0s; }
+        .delay-2 { animation-delay: 3s; }
+        .delay-3 { animation-delay: 6s; }
+    </style>
+</head>
+<body class="bg-black text-white selection:bg-yellow-500 selection:text-black">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-4 py-4 flex justify-between items-center">
+        <a href="https://actioncontractor.com" class="text-white hover:text-yellow-500 transition-colors duration-300 flex items-center gap-2 group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span class="uppercase tracking-widest text-[10px] font-bold">Home</span>
+        </a>
+        <a href="/contact.vcf" 
+           class="text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+            Save Contact
+        </a>
+    </nav>
+
+    <main class="relative min-h-screen flex flex-col items-center px-4 py-16 overflow-hidden">
+        <!-- Optimized Glows -->
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-[-5%] left-[-5%] w-[60%] h-[60%] rounded-full bg-yellow-600 blur-[100px]"></div>
+            <div class="absolute bottom-[-5%] right-[-5%] w-[60%] h-[60%] rounded-full bg-zinc-800 blur-[100px]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl w-full text-center space-y-12">
+            
+            <!-- Header -->
+            <header class="space-y-3 pt-10">
+                <h2 class="text-zinc-500 uppercase tracking-[0.3em] text-[10px] md:text-xs font-semibold">Infrastructure Specialists</h2>
+                <div class="text-3xl md:text-6xl font-bold tracking-tight leading-tight flex items-center justify-center flex-wrap gap-x-4">
+                    <!-- Rotating Section -->
+                    <div class="relative inline-block h-[1.2em] overflow-hidden text-right min-w-[140px] md:min-w-[280px]">
+                        <span class="word-slide delay-1">Built for</span>
+                        <span class="word-slide delay-2">Ideas into</span>
+                        <span class="word-slide delay-3">Ready for</span>
+                    </div>
+                    <!-- Anchor -->
+                    <span class="text-yellow-500 relative z-10" style="padding-bottom: 12px;">Action.</span>
+                </div>
+            </header>
+
+            <!-- Primary Video Section -->
+            <div class="relative w-full max-w-2xl mx-auto group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-600 to-zinc-800 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-900 shadow-2xl border border-zinc-800">
+                    <iframe 
+                        class="absolute inset-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/zYnaD-6dWGM?autoplay=1&mute=1&loop=1&playlist=zYnaD-6dWGM" 
+                        title="Action Contractors Infrastructure" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="space-y-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto">
+                    <div class="p-4 rounded-xl glass border border-zinc-800">
+                        <div class="text-xl md:text-2xl font-bold text-yellow-500">120+</div>
+                        <div class="text-[9px] uppercase tracking-wider text-zinc-500 font-bold">Projects Delivered</div>
+                    </div>
+                    <div class="p-4 rounded-xl glass border border-zinc-800">
+                        <div class="text-xl md:text-2xl font-bold text-yellow-500">12+</div>
+                        <div class="text-[9px] uppercase tracking-wider text-zinc-500 font-bold">States Served</div>
+                    </div>
+                    <div class="p-4 rounded-xl glass border border-zinc-800">
+                        <div class="text-xl md:text-2xl font-bold text-yellow-500">6+</div>
+                        <div class="text-[9px] uppercase tracking-wider text-zinc-500 font-bold">Industry Sectors</div>
+                    </div>
+                    <div class="p-4 rounded-xl glass border border-zinc-800">
+                        <div class="text-xl md:text-2xl font-bold text-yellow-500">15+</div>
+                        <div class="text-[9px] uppercase tracking-wider text-zinc-500 font-bold">Years Experience</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-center gap-8 max-w-2xl mx-auto px-4 py-4 text-zinc-400 text-xs uppercase tracking-widest font-medium">
+                    <div class="space-y-2">
+                        <span class="text-yellow-500 block text-[10px] font-bold mb-1">Specializations</span>
+                        <p class="leading-relaxed">Amusement Parks &bull; Retail &bull; Food & Beverage &bull; Grocery &bull; Hospitality &bull; Public Projects</p>
+                    </div>
+                    <div class="space-y-2 md:border-l md:border-zinc-800 md:pl-8">
+                        <span class="text-yellow-500 block text-[10px] font-bold mb-1">Regional Reach</span>
+                        <p class="leading-relaxed">OH &bull; WV &bull; VA &bull; FL &bull; TX &bull; GA &bull; SD &bull; PA &bull; MD &bull; NY &bull; IL &bull; CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Video Section -->
+            <div class="relative w-full max-w-2xl mx-auto group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-zinc-700 to-zinc-900 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-900 shadow-2xl border border-zinc-800">
+                    <iframe 
+                        class="absolute inset-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/Pl25ELIKZjg" 
+                        title="Action Contractors Project" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Copy -->
+            <div class="space-y-4 text-base md:text-xl text-zinc-300 leading-relaxed font-light max-w-2xl mx-auto">
+                <p class="italic text-zinc-500 text-sm md:text-lg">
+                    Where massive scale meets absolute precision.
+                </p>
+                <p class="text-white font-medium text-xl md:text-3xl">
+                    Executing complex infrastructure across the United States.
+                </p>
+            </div>
+
+            <!-- Brochure -->
+            <div class="pt-6 pb-12">
+                <div class="relative group max-w-3xl mx-auto">
+                    <div class="absolute -inset-1 bg-gradient-to-b from-yellow-600/20 to-transparent rounded-xl blur-sm opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                    <img src="/brochure-back.jpg" 
+                         alt="Action Contractors Capabilities" 
+                         class="relative rounded-xl shadow-2xl border border-zinc-800 w-full h-auto transition-transform duration-500 group-hover:scale-[1.01]">
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
